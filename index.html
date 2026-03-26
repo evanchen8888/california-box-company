@@ -219,12 +219,18 @@
         .product-image {
             width: 100%;
             height: 220px;
-            background: linear-gradient(45deg, #eee 0%, #ddd 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            color: #999;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
         }
 
         .product-content {
@@ -558,7 +564,9 @@
             </div>
             <div class="products-grid">
                 <div class="product-card">
-                    <div class="product-image">📦</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1586528116785-38bdc0b86c66?auto=format&fit=crop&w=600&h=220" alt="Custom Corrugated Boxes">
+                    </div>
                     <div class="product-content">
                         <h3>Custom Corrugated Boxes</h3>
                         <p>Custom-printed and die-cut corrugated boxes made to your exact specifications for food products and shipping.</p>
@@ -566,7 +574,9 @@
                     </div>
                 </div>
                 <div class="product-card">
-                    <div class="product-image">🍱</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1567620905739-9b97ff8a8b77?auto=format&fit=crop&w=600&h=220" alt="Food Service Packaging">
+                    </div>
                     <div class="product-content">
                         <h3>Food Service Packaging</h3>
                         <p>Food-safe corrugated boxes and packaging for restaurants, food producers, and distributors across Southern California.</p>
@@ -574,7 +584,9 @@
                     </div>
                 </div>
                 <div class="product-card">
-                    <div class="product-image">🎪</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=600&h=220" alt="Trade Show Boxes">
+                    </div>
                     <div class="product-content">
                         <h3>Trade Show Boxes</h3>
                         <p>Quick turnaround shipping and display boxes for food show exhibitors at the Los Angeles Convention Center and Anaheim.</p>
@@ -582,7 +594,9 @@
                     </div>
                 </div>
                 <div class="product-card">
-                    <div class="product-image">📯</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1587614374668-a42494b4a30f?auto=format&fit=crop&w=600&h=220" alt="Shipping Mailers">
+                    </div>
                     <div class="product-content">
                         <h3>Shipping Mailers</h3>
                         <p>Premium corrugated mailers in multiple sizes for food product e-commerce and direct-to-consumer shipping.</p>
@@ -590,7 +604,9 @@
                     </div>
                 </div>
                 <div class="product-card">
-                    <div class="product-image">📊</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556909114-12d011e530d0?auto=format&fit=crop&w=600&h=220" alt="Packaging Kits">
+                    </div>
                     <div class="product-content">
                         <h3>Packaging Kits</h3>
                         <p>Pre-assembled packaging kits that streamline your packing process and save labor on your production line.</p>
@@ -598,7 +614,9 @@
                     </div>
                 </div>
                 <div class="product-card">
-                    <div class="product-image">📏</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1592838061846-389cac3b9cad?auto=format&fit=crop&w=600&h=220" alt="Stock Boxes">
+                    </div>
                     <div class="product-content">
                         <h3>Stock Boxes</h3>
                         <p>Large inventory of standard-size boxes available for immediate pickup or local delivery across Los Angeles.</p>
